@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container"> <!*CONTENEDOR-PRINCIPAL*!>
+
+            <!********************************************** NAVEGADOR**********************************************************************************!>
+         <nav class="row navbar bg-light p-2">
+            <div class="container-fluid">
+
+            <!********************************************** IMAGEN Y LOGO**********************************************************************************!>
+
+                    <div class="col-8">
+                        <a class="navbar-brand text-dark href="#">
+                            <i class="fa-brands fa-square-instagram text-dark fw-normal"> Instagram</i>
+                            
+                          </a>
+                    </div> 
+                    
+              <!********************************************** BUTTON GREEN Y SETTINGS**********************************************************************************!>
+                    <div class="col-3">
+                        <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo"> Create a new post</button>
+                        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <div class="mb-3">
+                                    <label for="recipient-name" class="col-form-label">Recipient:</label>
+                                    <input type="text" class="form-control" id="recipient-name">
+                                  </div>
+                                  <div class="mb-3">
+                                    <label for="message-text" class="col-form-label">Message:</label>
+                                    <textarea class="form-control" id="message-text"></textarea>
+                                    <i class="fa-solid fa-camera-retro mt-3"></i>
+                                    <i class="fa-solid fa-location-dot mt-3 ms-2"></i>
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Publish</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        
+                    </div>
+
+                    <div class=" col-1 dropdown">
+                        <button class="btn btn-secondary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-gear"></i>
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Profile</a></li>
+                          <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                          <li><a class="dropdown-item" href="#">Privacity and data</a></li>
+                        </ul>
+                      </div>
+                      
+            </div>
+        </nav>
+
+        <!********************************************** CAMBIO DE PAGINA- BOTONES**********************************************************************************!>
+        <div class="container mt-4" id="botonesPagina">
+          <div class="row">
+            <div class="col 4"></div>
+            <div class="col 4">
+              <ul class=" justify-content-center border border-0 nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="border border-0 nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">
+                    <i class="fa-sharp fa-solid fa-square"></i>
+                  </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="border border-0 nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+                    <i class="fa-sharp fa-solid fa-square"></i>
+                  </button>
+              </ul>
+            </div>
+            <div class="col 4"></div>
+          </div>
+        </div>
+        
+        <!********************************************** PRIMERA PAGINA**********************************************************************************!>
+
+        <!*------------------------------------------IMAGEN BASE-----------------------------------------------------*!>
+        <div class="tab-content" id="scrollImagenes">  
+          <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+
+            <div class="container mt-3" id="titulo">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="p-1 bg-light">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-9 p-3"><h3 class="fw-light">Roadtrip</h3></div>
+                        <div class="col-3 p-3"> <h3 class="float-end fw-light">09-16</h3></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+            
+            <div class="container" id="imagen">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <img src="https://images.unsplash.com/photo-1586902197503-e71026292412?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1472&q=80" class="img-fluid" alt="...">
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <div class="container" id="likes">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class= "p-1 bg-light">
+                    <h4 class="p-3"><i class="fa-solid fa-heart"></i>  222,210 likes</h4> 
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <div class="container" id="description">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="p-1 bg-light">
+                    <h4 class="fw-light p-3">Un viaje chulisimo con mis amigos a disfrutar el verano </h4> 
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <!*-------------------------------------------IMAGEN 2-----------------------------------------------------*!>
+            <div class="container mt-3" id="titulo">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="p-1 bg-light">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-9 p-3"><h3 class="fw-light">A tomar el sol</h3></div>
+                        <div class="col-3 p-3"> <h3 class="float-end fw-light">09-16</h3></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+            
+            <div class="container" id="imagen">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <img src="https://images.unsplash.com/photo-1601871925712-3c803d50fa72?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="...">
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <div class="container" id="likes">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class= "p-1 bg-light">
+                    <h4 class="p-3"><i class="fa-solid fa-heart"></i>  388,000 likes</h4> 
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <div class="container" id="description">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="p-1 bg-light">
+                    <h4 class="fw-light p-3">Tomar el sol la playa es lo mejor del mundo</h4> 
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <!*-------------------------------------------IMAGEN 3-----------------------------------------------------*!> 
+
+            <div class="container mt-3" id="titulo">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="p-1 bg-light">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-9 p-3"><h3 class="fw-light">Vamonos en globo!</h3></div>
+                        <div class="col-3 p-3"> <h3 class="float-end fw-light">09-16</h3></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+            
+            <div class="container" id="imagen">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <img src="https://images.unsplash.com/photo-1507608869274-d3177c8bb4c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="...">
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <div class="container" id="likes">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class= "p-1 bg-light">
+                    <h4 class="p-3"><i class="fa-solid fa-heart"></i>  348,490 likes</h4> 
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+
+            <div class="container" id="description">
+              <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                  <div class="p-1 bg-light">
+                    <h4 class="fw-light p-3">A cruzas el mundo por todos los transportes!</h4> 
+                  </div>
+                </div>
+                <div class="col-2"></div>
+              </div>
+            </div>
+     
+          </div>
+
+
+          <!********************************************** SEGUNDA PAGINA**********************************************************************************!>
+
+          <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1505279340786-1e3b097e227a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" width=100% height="100%" class="img-responsive" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1473&q=80"  width="100%" height="100%" class="img-responsive" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1462823985959-022de68638a2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80"  width="100%" height="100%" class="img-responsive" alt="...">
+                </div>
+              </div>
+            </div>
+    
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1484821582734-6c6c9f99a672?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80" width=100% height="100%" class="img-responsive" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1496046744122-2328018d60b6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1487&q=80"  width="100%" height="100%" class="img-responsive" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/uploads/14134890947503c6effdc/72adf455?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"  width="100%" height="100%" class="img-responsive" alt="...">
+                </div>
+              </div>
+            </div>
+    
+            <div class="container mt-3">
+              <div class="row">
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1471085507142-12355181f804?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" width=100% height="100%" class="img-responsive" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1440778303588-435521a205bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"  width="100%" height="100%" class="img-responsive" alt="...">
+                </div>
+                <div class="col-4">
+                  <img src="https://images.unsplash.com/photo-1528150230181-99bbf7b22162?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"  width="100%" height="100%" class="img-responsive" alt="...">
+                </div>
+              </div>
+            </div>
+        </div>
+          </div>
+        </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+        <!********************************************** IMAGENES**********************************************************************************!>
+
+        
+
+    <!********************************************** PAGINA NUEVA**********************************************************************************!>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+    <script
+			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+			integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+			integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+			crossorigin="anonymous"
+	></script>
+    
+</body>
+</html>
